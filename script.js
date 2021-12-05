@@ -14,6 +14,8 @@ const guessNum = function () {
             if (confirm("Поздравляю, Вы угадали!!! Хотели бы сыграть еще?")) {
                 userAttempts = 0;
                 guessNum();
+            } else {
+                alert("Спасибо за игру!");
             }
         } else if (userAttempts == 9){
             if (confirm("Попытки закончились, хотите сыграть еще?")) {
