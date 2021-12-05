@@ -19,6 +19,8 @@ const guessNum = function () {
             if (confirm("Попытки закончились, хотите сыграть еще?")) {
                 userAttempts = 0;
                 guessNum();
+            } else {
+                alert("Спасибо за игру!");
             }
         } else if (userNum === "" || userNum === " " || isNaN(Number(userNum))) {
             userNum = prompt("Введи число!!");
